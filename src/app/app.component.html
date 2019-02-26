@@ -4,11 +4,126 @@
   <button mat-menu-item>Item 2</button>
 </mat-menu> -->
 
-<mat-toolbar color="primary">
+<mat-toolbar class="nav" color="warn">
   <mat-toolbar-row>
+    <img class="logo" src="assets/officiallogo.png" >
     <button mat-button>Products</button>
-    <button mat-button>Products</button>
-    <button mat-button>Products</button>
-    <button mat-button>Products</button>
+    <button mat-button>Health</button>
+    <button mat-button>Mission</button>
+    <button mat-button>Lifebuoy</button>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <span class="fill-space"></span>
+    <mat-form-field class="" appearance="fill">
+      <input matInput placeholder="Search">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
   </mat-toolbar-row>
 </mat-toolbar>
+<div class="container carousel">
+  <ngb-carousel >
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/homecarousel1.png" alt="Random first slide">
+        </div>
+        <div class="col-md-5">
+        <h2 style="color: red"><strong>WORLD'S #1 SELLING GERM PROTECTION SOAP</strong></h2>
+        <br>
+        <h4>Accept nothing less than 99.9% germ protection. The Lifebuoy range
+          is tailored to your family's needs, from extra moisture to energizing scents.</h4>
+        <br>
+        <button mat-button class="btn">LEARN MORE ABOUT OUR RANGE</button>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/homecarousel2.jpg" alt="Random second slide">
+        </div>
+        <div class="col-md-5">
+          <h2 style="color: red"><strong>HELP A CHILD REACH 5</strong></h2>
+          <br>
+          <h4>Lifebuoy helps more children reach their 5th birthday testing.</h4>
+          <br>
+          <button mat-button class="btn">JOIN THE CAUSE</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="container">
+  <p class="heads"><strong>Social</strong></p>
+  <p class="paras">Lifebuoy is on a mission. A lifesaving mission to spread the importance of good handwashing habits around the world.</p>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card" style="width:400px">
+          <div class="card-body">
+            <img class="card-img-top" src="assets/social1.png" alt="Card image" width="100%">
+
+            <h4 class="card-title">Help a Child Reach 5</h4>
+            <p class="card-text"> Every year, 1.7 million children die due to diarrhoea and pneumonia...</p>
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card" style="width:400px">
+          <div class="card-body">
+            <img class="card-img-top" src="assets/social2.jpg" alt="Card image" width="100%" height="300px">
+
+            <h4 class="card-title">Yousef Al-Jarrah kicks off Lifebuoy's handwashing</h4>
+            <p class="card-text"> Lifebuoy is partnering with Saudi Arabian celebrity Al-Jarrahl.</p>
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="heads"><strong> Health</strong></h2>
+  <p class="paras">Stay up-to-date on health matters,because knowledge is the best defense.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width:300px">
+          <div class="card-body">
+            <img class="card-img-top" src="assets/Health1.png" alt="Card image" width="100%" height="300px" >
+
+            <h4 class="card-title">How to prevent and treat winter infections</h4>
+            <p class="card-text">Get your answers on winter infections!</p>
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width:300px">
+          <div class="card-body">
+            <img class="card-img-top" src="assets/Health2.png" alt="Card image" width="100%" height="300px" >
+
+            <h4 class="card-title">Top Heath and Hygiene tips for monsoon season</h4>
+            <p class="card-text">Did you know Common infections...</p>
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width:300px">
+          <div class="card-body">
+            <img class="card-img-top" src="assets/Health3.jpg" alt="Card image" width="100%" height="300px">
+            <h4 class="card-title">H1N1 | Lifebuoy</h4>
+            <p class="card-text">H1N1 is the very clinical sounding name for Swine Flu</p>
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
