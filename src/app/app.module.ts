@@ -10,6 +10,8 @@ import { SurveyformComponent } from './surveyform/surveyform.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
+import { RouterModule, Routes } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,15 @@ import {HttpClientModule} from '@angular/common/http';
     NgbModule,
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule,HttpClientModule
+    FormsModule,
+    HttpClientModule,
+      RouterModule.forRoot([
+        {path: 'surveyform' , component : SurveyformComponent},
+        {path: 'products' , component : ProductsComponent},
+        {path: 'mission' , component : MissionComponent},
+        {path: 'helpachild' , component: HelpachildComponent},
+         {path: 'app', component: AppComponent}
+        ])
   ],
 
   providers: [],

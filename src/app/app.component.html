@@ -6,16 +6,18 @@
 
 <mat-toolbar class="nav" color="warn">
   <mat-toolbar-row>
-    <img class="logo" src="assets/officiallogo.png" >
-    <button mat-button>Products</button>
-    <button mat-button>Health</button>
-    <button mat-button>Mission</button>
+    <img class="logo" src="assets/officiallogo.png">
+    <button mat-button routerLink="products" routerLinkActive="active">Products</button>
+    <!--<button mat-button routerLink="" routerLinkActive="active">Home</button>-->
+
+    <button mat-button routerLink="mission" routerLinkActive="active">Mission</button>
     <button mat-button>Lifebuoy</button>
     <button mat-button [matMenuTriggerFor]="menu">Menu</button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>Item 1</button>
       <button mat-menu-item>Item 2</button>
     </mat-menu>
+    <button mat-button routerLink="surveyform" routerLinkActive="active">SurveyForm</button>
     <span class="fill-space"></span>
     <mat-form-field class="" appearance="fill">
       <input matInput placeholder="Search">
@@ -23,6 +25,7 @@
     </mat-form-field>
   </mat-toolbar-row>
 </mat-toolbar>
+<router-outlet></router-outlet>
 <br>
 <div class="container carousel">
   <ngb-carousel >
@@ -135,9 +138,10 @@
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <br>
-<app-mission></app-mission>
-<br>
-<app-helpachild></app-helpachild>
-<app-products></app-products>
-<br>
-<app-surveyform></app-surveyform>
+<!--<app-mission></app-mission>-->
+<!--<br>-->
+<!--<app-helpachild></app-helpachild>-->
+<!--<app-products></app-products>-->
+<!--<br>-->
+<!--<app-surveyform></app-surveyform>-->
+
