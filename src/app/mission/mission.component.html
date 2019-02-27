@@ -1,0 +1,35 @@
+<mat-toolbar class="nav" color="warn">
+  <mat-toolbar-row>
+    <img class="logo" src="assets/officiallogo.png" >
+    <button mat-button>Products</button>
+    <button mat-button>Health</button>
+    <button mat-button>Mission</button>
+    <button mat-button>Lifebuoy</button>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <span class="fill-space"></span>
+    <mat-form-field class="" appearance="fill">
+      <input matInput placeholder="Search">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="item">
+  <img  src="assets/social2.jpg" style="horiz-align: center" >
+  <br>
+  <h4>Yousef Al-Jarrah kicks off Lifebuoy's handwashing programme in Saudi Arabia</h4>
+  <br><br>
+  <p style="font-size: 20px">Lifebuoy is partnering with Saudi Arabian celebrity Yousef Al-Jarrah
+    to kick off its schools programme, educating children and their families about the importance
+    of handwashing with soap at the 5 key occasions during the day. As part of the programme,
+    Lifebuoy is running an exciting competition giving children the chance to be involved in
+    Lifebuoy's Little Doctors Camp – a fun and educational camp that teaches children to be
+    handwashing ambassadors. Children can enter by registering on Lifebuoy's website and committing
+    to practicing handwashing at the key occasions. Every time a child shows they've washed their
+    hands, they are rewarded with a new Lifebuoy video that gives tips to help them remember the
+    key occasions. Children who sustain the habit for the whole month go into a draw to win a place
+    at the camp.</p>
+</div>

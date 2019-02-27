@@ -1,0 +1,43 @@
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.nav{
+  vertical-align: middle;
+}
+.nav button:hover{
+  background-color: white;
+  color: red;
+
+}
+.logo{
+  height: 100%;
+}
+.fill-space{
+  flex: 1 1 auto;
+}
+.search{
+  vertical-align: middle;
+}
+.desc{
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+}
+h4{
+  font-size: 40px;
+  color:red;
+  text-align:left;
+}
+.item{
+  horiz-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+hr{
+  height: 4px ;
+  color:red;
+}

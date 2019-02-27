@@ -1,0 +1,121 @@
+<mat-toolbar class="nav" color="warn">
+  <mat-toolbar-row>
+    <img class="logo" src="assets/officiallogo.png" >
+    <button mat-button>Products</button>
+    <button mat-button>Health</button>
+    <button mat-button>Mission</button>
+    <button mat-button>Lifebuoy</button>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <span class="fill-space"></span>
+    <mat-form-field class="" appearance="fill">
+      <input matInput placeholder="Search">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br>
+<br>
+<div class="container carousel">
+  <ngb-carousel >
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/productscarousel3.png" alt="Random first slide">
+        </div>
+        <div class="col-md-5">
+          <h2 style="color: red"><strong>LIFEBUOY HANDWASH</strong></h2>
+          <br>
+          <h4>Lifebuoy handwash makes hand washing quicker and more effective than ever
+            before! With our Activ Natural Shield formula, Lifebuoy HandWash  gives 99.9% germ
+          protection in just 10 seconds.</h4>
+          <br>
+          <button mat-button class="btn">LEARN MORE ABOUT OUR RANGE</button>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/productscarousel2.png" alt="Random second slide">
+        </div>
+        <div class="col-md-5">
+          <h2 style="color: red"><strong>COLOR CHANGING HANDWASH</strong></h2>
+          <br>
+          <h4>Lifebuoy Color Changing Handwash changes color when hands are clean
+           and protects against 10 skin infection causing germs.</h4>
+          <br>
+          <button mat-button class="btn">LEARN MORE ABOUT OUR RANGE</button>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/productscarousel1.png" alt="Random second slide">
+        </div>
+        <div class="col-md-5">
+          <h2 style="color: red"><strong>KITCHEN FRESH HANDWASH</strong></h2>
+          <br>
+          <h4>Lifebuoy Kitchen Fresh Handwash to deeply cleanse hands
+          and help protect against 10 skin infection causing germs.</h4>
+          <br>
+          <button mat-button class="btn">LEARN MORE ABOUT OUR RANGE</button>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <br>
+
+  <div class="container" style="margin: auto">
+    <div class="row">
+      <div class="col-md-4">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+          </mat-card-header>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+          <mat-card-content>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+
+      </div>
+      <div class="col-md-4">
+        <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+      </div>
+      <div class="col-md-4">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+          </mat-card-header>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+          <mat-card-content>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<mat-toolbar class="nav" color="warn">
+  <mat-toolbar-row>
+    <img class="logo" src="assets/officiallogo.png" >
+    <button mat-button>Products</button>
+    <button mat-button>Health</button>
+    <button mat-button>Mission</button>
+    <button mat-button>Lifebuoy</button>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <span class="fill-space"></span>
+    <mat-form-field class="" appearance="fill">
+      <input matInput placeholder="Search">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <h1 class="heads">Help a Child Reach 5</h1>
+  <br>
+  <!--<mat-icon>fb</mat-icon>-->
+  <!--<mat-icon>twitter</mat-icon>-->
+  <div class="container">
+    <h1 class="heads">YOU COULD HELP SAVE A BABY'S LIFE.</h1>
+    <p class="paras">Share Sangrahi's story, show it to expecting mothers and join a global movement
+      to teach good handwashing habits that can save millions of young lives. #HelpAChildReach5</p>
+    <br>
+    <br>
+    <iframe width="90%" style="margin: auto; display: block" height="600" src="https://www.youtube.com/embed/VsnP_6kdtDY" frameborder="0" allow="accelerometer;
+        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+
+  </div>
+  <div class="container">
+
+    <h1 class="heads">AWARENESS SAVES. HELPS THE WORLD.</h1>
+    <p class="paras">Watch the story of Utari and her strange affection for a tree. A story of love, longing
+      and loss. Every year 1.7 million children under the
+      age of 5 die of infections like diarrhea and pneumonia. A lot of these deaths can be prevented by the
+      simple act of washing hands with soap.</p>
+    <br>
+    <br>
+    <iframe width="90%" style="margin: auto; display: block" height="600" src="https://www.youtube.com/embed/GCwgKFttQ7M" frameborder="0" allow="accelerometer;
+        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+  </div>
+  <div class="container">
+    <h1 class="heads">LIFEBUOY GONDAPPA</h1>
+    <p class="paras">An inspiring story of celebration. Every year 2 million children under the age of 5, die of infections like Diarrhoea and
+      Pneumonia. For the past 10 years, Lifebuoy soap has tried to help prevent these deaths by teaching children the simple act of washing hands with soap.</p>
+    <br>
+    <br>
+    <iframe width="90%" style="margin: auto; display: block" height="600" src="https://www.youtube.com/embed/UF7oU_YSbBQ" frameborder="0" allow="accelerometer;
+        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+  </div>
+</div>
+
