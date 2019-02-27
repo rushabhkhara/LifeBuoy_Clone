@@ -7,13 +7,18 @@
 .nav{
   vertical-align: middle;
 }
+.nav button{
+  outline: none;
+}
 .nav button:hover{
   background-color: white;
   color: red;
+  outline: none;
 
 }
 .logo{
   height: 100%;
+  outline: none;
 }
 .fill-space{
   flex: 1 1 auto;
@@ -23,45 +28,4 @@
   height: 100%;
 }
 
-.carousel{
-  margin-top: 50px;
-  outline: none;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.btn{
-  color: white;
-  background-color: red;
-}
-.card {
-  border-left-ra: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  text-align: center;
-}
-.card-body{
-  border: none;
-  background-color: red;
-}
-.card-title{
-  color: white;
-}
-.card-text{
-  color:white;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.heads{
-  color:red;
-  font-size: 32px;
-}
-.paras{
-  font-size: 17px;
-  color:black;
-}
 

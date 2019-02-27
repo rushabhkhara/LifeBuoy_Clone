@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule, Routes } from '@angular/router';
     MissionComponent,
     HelpachildComponent,
     ProductsComponent,
-    SurveyformComponent
+    SurveyformComponent,
+    HomeComponent
   ],
   imports: [
     MaterialModule,
@@ -32,11 +34,13 @@ import { RouterModule, Routes } from '@angular/router';
         {path: 'products' , component : ProductsComponent},
         {path: 'mission' , component : MissionComponent},
         {path: 'helpachild' , component: HelpachildComponent},
-         {path: 'app', component: AppComponent}
+         {path: 'home', component: HomeComponent},
         ])
   ],
 
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

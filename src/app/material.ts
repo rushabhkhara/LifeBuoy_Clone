@@ -8,12 +8,13 @@ import {
   MatBadgeModule,
   MatGridListModule,
   MatCardModule,
-  MatMenuModule, MatInputModule
+  MatMenuModule, MatInputModule, MatSelectModule
 } from '@angular/material';
 import {MatFormFieldModule} from '@angular/material';
 
 @NgModule({
   imports: [
+    MatSelectModule,
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
@@ -27,6 +28,7 @@ import {MatFormFieldModule} from '@angular/material';
     MatInputModule,
   ],
   exports: [
+    MatSelectModule,
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
