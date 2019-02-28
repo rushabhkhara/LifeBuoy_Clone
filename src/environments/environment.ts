@@ -2,8 +2,18 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import {config} from 'rxjs';
+
 export const environment = {
-  production: false
+  production: false,
+   config :{
+    apiKey: 'AIzaSyDAHzBMPGEFRMF111NcP44ECWR3DHKT7QI',
+    authDomain: 'myangularproject-36ace.firebaseapp.com',
+    databaseURL: 'https://myangularproject-36ace.firebaseio.com',
+    projectId: 'myangularproject-36ace',
+    storageBucket: 'myangularproject-36ace.appspot.com',
+    messagingSenderId: '482227833932'
+  },
 };
 
 /*

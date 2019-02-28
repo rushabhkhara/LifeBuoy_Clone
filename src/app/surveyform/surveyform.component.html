@@ -35,23 +35,23 @@
               <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
             </div>
           </div>
-          <div class="form-group" [class.has-error]="q1.touched && q1.invalid">
+          <div class="form-group login-group-checkbox" [class.has-error]="q1.touched && q1.invalid">
             <label for="q1" class="control-label">Which brand of antibacterial product are you using?</label>
             <div class="form-control">
               <label class="radio-inline">
-              <input type="radio" required #q1="ngModel" name="q1" value="lifebuoy" [ngModel]="model.q1 ">Lifebuoy
+              <input type="radio" required  name="q1" value="lifebuoy" [(ngModel)]="model.q1" #q1="ngModel">Lifebuoy
               </label>
               <label class="radio-inline">
-              <input type="radio" required #q1="ngModel" name="q1" value="dettol" [ngModel]="model.q1">Dettol
+              <input type="radio" required #q1="ngModel" name="q1" value="dettol" [(ngModel)]="model.q1">Dettol
               </label>
               <label class="radio-inline">
-              <input type="radio" required #q1="ngModel" name="q1" value="protex" [ngModel]="model.q1">Protex
+              <input type="radio" required #q1="ngModel" name="q1" value="protex" [(ngModel)]="model.q1">Protex
               </label>
               <label class="radio-inline">
-              <input type="radio" required #q1="ngModel" name="q1" value="antabax" [ngModel]="model.q1">Antabax
+              <input type="radio" required #q1="ngModel" name="q1" value="antabax" [(ngModel)]="model.q1">Antabax
               </label>
               <label class="radio-inline">
-              <input type="radio" required #q1="ngModel" name="q1" value="others" [ngModel]="model.q1">Others
+              <input type="radio" required #q1="ngModel" name="q1" value="others" [(ngModel)]="model.q1">Others
               </label>
               <br>
               <span  style="color: red" class="help-block" *ngIf="q1.touched && q1.invalid">
@@ -64,10 +64,10 @@
             <label for="q2" class="control-label">Are you satisfied with Lifebuoy products?</label>
             <div class="form-control">
               <label class="radio-inline">
-                <input type="radio" required #q2="ngModel" name="q2" value="yes" [ngModel]="model.q2 ">Yes
+                <input type="radio" required #q2="ngModel" name="q2" value="yes" [(ngModel)]="model.q2 ">Yes
               </label>
               <label class="radio-inline">
-                <input type="radio" required #q2="ngModel" name="q2" value="no" [ngModel]="model.q2">No
+                <input type="radio" required #q2="ngModel" name="q2" value="no" [(ngModel)]="model.q2">No
               </label>
               <br>
               <span  style="color: red" class="help-block" *ngIf="q2.touched && q2.invalid">
@@ -79,11 +79,12 @@
           <div class="form-group" [class.has-error]="q3.touched && q3.invalid">
             <label for="q3" class="control-label">Are you satisfied with Lifebuoy products?</label>
             <div class="form-control">
-              <label class="radio-inline">
-                <input type="radio" required #q3="ngModel" name="q3" value="yes" [ngModel]="model.q3 ">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" required #q3="ngModel" name="q3" value="no" [ngModel]="model.q3">No
+              <label>
+                <input type="radio" required #q3="ngModel" name="q3" value="yes" [(ngModel)]="model.q3 ">Yes
+              <!--</label>-->
+              <!--<label class="radio-inline">-->
+
+                <input type="radio" required #q3="ngModel" name="q3" value="no" [(ngModel)]="model.q3">No
               </label>
               <br>
               <span  style="color: red" class="help-block" *ngIf="q3.touched && q3.invalid ">
@@ -91,8 +92,16 @@
               </span>
             </div>
           </div>
+          <!--<div class="form-group login-group-checkbox">-->
+            <!--<label for="reg_gender" >Gender</label> <br>-->
+            <!--<input type="radio" class="" name="reg_gender" id="male" placeholder="username">-->
+            <!--<label for="male">Male</label>-->
+            <!--<br>-->
+            <!--<input type="radio" class="" name="reg_gender" id="female" placeholder="username">-->
+            <!--<label for="female">Female</label>-->
+          <!--</div>-->
           <div class="form-group">
-            <br>
+
             <button mat-button [disabled]="q3.errors || q2.errors || q1.errors" class="btn" >Register</button>
           </div>
         </form>

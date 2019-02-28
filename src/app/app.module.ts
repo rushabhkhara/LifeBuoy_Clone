@@ -13,6 +13,12 @@ import {HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +35,9 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    AngularFireDatabaseModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.config),
       RouterModule.forRoot([
         {path: 'surveyform' , component : SurveyformComponent},
         {path: 'products' , component : ProductsComponent},

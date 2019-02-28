@@ -1,6 +1,7 @@
 {
   "projects": {
     "askon": "myangularproject-36ace",
-    "default": "myangularproject-36ace"
+    "default": "myangularproject-36ace",
+    "rk": "myangularproject-36ace"
   }
 }
