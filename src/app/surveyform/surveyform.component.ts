@@ -23,7 +23,7 @@ export class SurveyformComponent implements OnInit {
   onSubmit() {
       console.log('Function called');
       console.log(JSON.stringify((this.model)));
-      alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.model));
+      alert('Thankyou for participating in the survey!');
       this.submitted = true;
         this.surveyformservice.insertSurvey(this.model);
         this.showSuccessMessage = true;

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/lifebuoy-clonefinal",
+    "public": "dist/MyAngularProj",
     "ignore": [
       "firebase.json",
       "**/.*",
